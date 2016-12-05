@@ -1,16 +1,10 @@
-package cs440_hw3_digit_classify;
+package neural;
 
 public class Pixel {
 	public int row, column;
 	public int label; ////digit 0 to 9
 	char content; //' ', +, #
-	public double spaceProb;
-	public double plusProb;
-	public double sharpProb;
-	
-	public int space = 0;
-	public int plus = 0;
-	public int sharp = 0;
+	int feature;
 	
 	public Pixel(){
 		
@@ -29,8 +23,5 @@ public class Pixel {
 		this.content = content;
 	}
 	
-	public char toChar(){
-		return this.content;
-	}
 	
 }
